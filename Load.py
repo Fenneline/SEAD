@@ -218,8 +218,11 @@ c = 1
 Vh = 138.89/MAC
 V = 138.89/MAC  # Vh/V: the higher, the more stable.
 VhV = Vh/V
-xac = (xcg_w - x_leadingedge)/MAC
-
+xac_w = (xcg_w - x_leadingedge)/MAC #this is (Xac)w not Xac for tailless aircraft! 
+xac_f1 = 1 #opvulling hier zijn formules voor
+xac_f2 = 1 #opvulling
+xac_n = 1 #opvulling
+xac = xac_w + xac_f1 + xacf2 +xacn
 # Stability curve
 
 x_cg = np.linspace(0, 1, 2)
